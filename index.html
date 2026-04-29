@@ -20,7 +20,6 @@
             transition: all 0.3s ease;
         }
 
-        /* Dark Mode Styles */
         body.dark-mode {
             background: #1a1a2e;
         }
@@ -78,18 +77,6 @@
             border-radius: 28px;
             box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.25);
             overflow: hidden;
-            animation: fadeIn 0.6s ease-out;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
         }
 
         .header {
@@ -97,23 +84,6 @@
             color: white;
             padding: 40px 45px 35px 45px;
             text-align: center;
-            position: relative;
-        }
-
-        .profile-img-container {
-            text-align: center;
-            margin-top: -70px;
-            margin-bottom: 20px;
-        }
-
-        .profile-img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            border: 4px solid white;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            background: white;
-            object-fit: cover;
         }
 
         .header h1 {
@@ -174,7 +144,6 @@
 
         .section {
             margin-bottom: 38px;
-            animation: fadeIn 0.5s ease-out;
         }
 
         .section-title {
@@ -191,7 +160,6 @@
             padding: 20px 28px;
             border-radius: 20px;
             border: 1px solid #e0edf2;
-            transition: all 0.3s ease;
         }
 
         .about-text {
@@ -216,12 +184,6 @@
             font-size: 13px;
             font-weight: 500;
             color: #1e5f6b;
-            transition: all 0.2s ease;
-        }
-
-        .pill:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
         .edu-grid {
@@ -235,12 +197,6 @@
             border-radius: 18px;
             padding: 16px 22px;
             border: 1px solid #e9f0f3;
-            transition: all 0.3s ease;
-        }
-
-        .edu-item:hover {
-            transform: translateX(5px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
         }
 
         .edu-degree {
@@ -274,7 +230,6 @@
 
         .project-card:hover {
             transform: translateY(-5px);
-            border-color: #bcdfe8;
             box-shadow: 0 15px 25px -12px rgba(0, 0, 0, 0.15);
         }
 
@@ -361,21 +316,6 @@
             margin-bottom: 8px;
         }
 
-        .skill-bar-bg {
-            background: #e2edf0;
-            border-radius: 14px;
-            height: 10px;
-            overflow: hidden;
-        }
-
-        .skill-bar-fill {
-            background: #2f8b7c;
-            height: 10px;
-            border-radius: 14px;
-            width: 0%;
-            transition: width 1s ease-out;
-        }
-
         .skill-tags {
             display: flex;
             flex-wrap: wrap;
@@ -390,12 +330,6 @@
             font-size: 12px;
             font-weight: 500;
             color: #18616b;
-            transition: all 0.2s ease;
-        }
-
-        .skill-tag:hover {
-            transform: scale(1.05);
-            background: #cde5ec;
         }
 
         .vol-card {
@@ -404,12 +338,6 @@
             padding: 15px 18px;
             margin-bottom: 16px;
             border-radius: 16px;
-            transition: all 0.3s ease;
-        }
-
-        .vol-card:hover {
-            transform: translateX(5px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
         }
 
         .vol-title {
@@ -432,12 +360,6 @@
             font-size: 13px;
             font-weight: 500;
             color: #1e5f6b;
-            transition: all 0.2s ease;
-        }
-
-        .cert-pill:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
         .career-goal-box {
@@ -448,7 +370,6 @@
             font-size: 15px;
             line-height: 1.7;
             color: #2c5a62;
-            transition: all 0.3s ease;
         }
 
         .footer-note {
@@ -470,22 +391,12 @@
             .header h1 {
                 font-size: 32px;
             }
-            .profile-img {
-                width: 90px;
-                height: 90px;
-            }
-            .profile-img-container {
-                margin-top: -50px;
-            }
         }
     </style>
 </head>
 <body>
 <div class="cv-card">
     <div class="header">
-        <div class="profile-img-container">
-            <img src="https://ui-avatars.com/api/?background=2a5f6e&color=fff&size=120&name=Humna+Sheraz" alt="Profile Photo" class="profile-img">
-        </div>
         <h1>HUMNA SHERAZ</h1>
         <div class="tagline">Computer Science Undergraduate | Project Manager | Programmer | Small Business Owner</div>
         <div class="contact-bar">
@@ -494,13 +405,12 @@
             <span>FJWU (2024-2028)</span>
         </div>
         <div class="btn-container">
-            <button class="action-btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
-            <button class="action-btn" onclick="window.print()">📄 Download PDF</button>
+            <button class="action-btn" onclick="toggleDarkMode()">Dark Mode</button>
+            <button class="action-btn" onclick="window.print()">Download PDF</button>
         </div>
     </div>
 
     <div class="content">
-        <!-- About Me -->
         <div class="section">
             <div class="section-title">About Me</div>
             <div class="about-box">
@@ -513,7 +423,6 @@
             </div>
         </div>
 
-        <!-- Education -->
         <div class="section">
             <div class="section-title">Education</div>
             <div class="edu-grid">
@@ -532,102 +441,49 @@
             </div>
         </div>
 
-        <!-- Academic Projects -->
         <div class="section">
             <div class="section-title">Academic Projects</div>
             <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-title">Automatic Pet Feeder</div>
-                    <div class="tech-stack">Arduino, Blynk, C-style & HTML</div>
-                </div>
-                <div class="project-card">
-                    <div class="project-title">Hangman Game</div>
-                    <div class="tech-stack">C / C++</div>
-                </div>
-                <div class="project-card">
-                    <div class="project-title">Banking System</div>
-                    <div class="tech-stack">C / C++</div>
-                </div>
-                <div class="project-card">
-                    <div class="project-title">Library Management System</div>
-                    <div class="tech-stack">Java + SQL database</div>
-                </div>
-                <div class="project-card">
-                    <div class="project-title">Virtual Machine System</div>
-                    <div class="tech-stack">Computer Networks</div>
-                </div>
-                <div class="project-card">
-                    <div class="project-title">Obscure Binary Search Tree</div>
-                    <div class="tech-stack">C++</div>
-                </div>
-                <div class="project-card">
-                    <div class="project-title">Simple Encryption Description</div>
-                    <div class="tech-stack">Assembly Language + GUI</div>
-                </div>
+                <div class="project-card"><div class="project-title">Automatic Pet Feeder</div><div class="tech-stack">Arduino, Blynk, C-style & HTML</div></div>
+                <div class="project-card"><div class="project-title">Hangman Game</div><div class="tech-stack">C / C++</div></div>
+                <div class="project-card"><div class="project-title">Banking System</div><div class="tech-stack">C / C++</div></div>
+                <div class="project-card"><div class="project-title">Library Management System</div><div class="tech-stack">Java + SQL database</div></div>
+                <div class="project-card"><div class="project-title">Virtual Machine System</div><div class="tech-stack">Computer Networks</div></div>
+                <div class="project-card"><div class="project-title">Obscure Binary Search Tree</div><div class="tech-stack">C++</div></div>
+                <div class="project-card"><div class="project-title">Simple Encryption Description</div><div class="tech-stack">Assembly Language + GUI</div></div>
             </div>
         </div>
 
-        <!-- Work Experience -->
         <div class="section">
             <div class="section-title">Work Experience</div>
             <div class="exp-row">
                 <div class="exp-card">
                     <div class="exp-title">Home Tutor</div>
-                    <ul class="exp-list">
-                        <li>Personalized academic support for students</li>
-                        <li>Custom lesson planning and progress tracking</li>
-                        <li>Exam preparation and adaptive teaching</li>
-                    </ul>
+                    <ul class="exp-list"><li>Personalized academic support for students</li><li>Custom lesson planning and progress tracking</li><li>Exam preparation and adaptive teaching</li></ul>
                 </div>
                 <div class="exp-card">
                     <div class="exp-title">Small Business Owner (Baking)</div>
-                    <ul class="exp-list">
-                        <li>Managed an Instagram-based online bakery</li>
-                        <li>Customer service and order management</li>
-                        <li>Marketing, pricing and delivery timelines</li>
-                        <li>Time management and business operations</li>
-                    </ul>
+                    <ul class="exp-list"><li>Managed an Instagram-based online bakery</li><li>Customer service and order management</li><li>Marketing, pricing and delivery timelines</li><li>Time management and business operations</li></ul>
                 </div>
             </div>
         </div>
 
-        <!-- Volunteer Experience -->
         <div class="section">
             <div class="section-title">Volunteer Experience</div>
-            <div class="vol-card">
-                <div class="vol-title">Ayub National Park Cleanliness Drive</div>
-                <div style="font-size:13px; margin-top: 8px;">Led community cleanup initiative, coordinated volunteers, managed supplies and schedule.</div>
-            </div>
-            <div class="vol-card">
-                <div class="vol-title">Awareness Programs & Community Development Initiatives</div>
-                <div style="font-size:13px; margin-top: 8px;">Organized sessions, coordinated speakers, collected feedback and managed outreach.</div>
-            </div>
+            <div class="vol-card"><div class="vol-title">Ayub National Park Cleanliness Drive</div><div style="font-size:13px; margin-top: 8px;">Led community cleanup initiative, coordinated volunteers, managed supplies and schedule.</div></div>
+            <div class="vol-card"><div class="vol-title">Awareness Programs & Community Development Initiatives</div><div style="font-size:13px; margin-top: 8px;">Organized sessions, coordinated speakers, collected feedback and managed outreach.</div></div>
         </div>
 
-        <!-- Skills -->
         <div class="section">
             <div class="section-title">Skills</div>
             <div class="skill-block">
-                <div class="skill-item">
-                    <div class="skill-label">Project Management</div>
-                    <div class="skill-tags"><span class="skill-tag">Planning</span><span class="skill-tag">Organizing</span><span class="skill-tag">Monitoring</span></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-label">Programming</div>
-                    <div class="skill-tags"><span class="skill-tag">C</span><span class="skill-tag">C++</span><span class="skill-tag">Java</span><span class="skill-tag">SQL</span><span class="skill-tag">HTML/CSS</span><span class="skill-tag">Assembly</span></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-label">Business & Marketing</div>
-                    <div class="skill-tags"><span class="skill-tag">Instagram Growth</span><span class="skill-tag">Customer Engagement</span></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-label">Soft Skills</div>
-                    <div class="skill-tags"><span class="skill-tag">Communication</span><span class="skill-tag">Leadership</span><span class="skill-tag">Teamwork</span><span class="skill-tag">Problem Solving</span><span class="skill-tag">Time Management</span></div>
-                </div>
+                <div class="skill-item"><div class="skill-label">Project Management</div><div class="skill-tags"><span class="skill-tag">Planning</span><span class="skill-tag">Organizing</span><span class="skill-tag">Monitoring</span></div></div>
+                <div class="skill-item"><div class="skill-label">Programming</div><div class="skill-tags"><span class="skill-tag">C</span><span class="skill-tag">C++</span><span class="skill-tag">Java</span><span class="skill-tag">SQL</span><span class="skill-tag">HTML/CSS</span><span class="skill-tag">Assembly</span></div></div>
+                <div class="skill-item"><div class="skill-label">Business & Marketing</div><div class="skill-tags"><span class="skill-tag">Instagram Growth</span><span class="skill-tag">Customer Engagement</span></div></div>
+                <div class="skill-item"><div class="skill-label">Soft Skills</div><div class="skill-tags"><span class="skill-tag">Communication</span><span class="skill-tag">Leadership</span><span class="skill-tag">Teamwork</span><span class="skill-tag">Problem Solving</span><span class="skill-tag">Time Management</span></div></div>
             </div>
         </div>
 
-        <!-- Certificates & Awards -->
         <div class="section">
             <div class="section-title">Certificates & Awards</div>
             <div class="cert-container">
@@ -637,62 +493,25 @@
             </div>
         </div>
 
-        <!-- Career Goal -->
         <div class="section">
             <div class="section-title">Career Goal</div>
-            <div class="career-goal-box">
-                To build a strong career in Project Management, applying leadership, organizational, and problem-solving skills to successfully deliver projects. Aim to contribute to impactful projects while empowering others through teamwork, planning, and innovation.
-            </div>
+            <div class="career-goal-box">To build a strong career in Project Management, applying leadership, organizational, and problem-solving skills to successfully deliver projects. Aim to contribute to impactful projects while empowering others through teamwork, planning, and innovation.</div>
         </div>
 
-        <div class="footer-note">
-            Professional portfolio showcasing my journey in Computer Science at Fatima Jinnah Women University (2024-2028)
-        </div>
+        <div class="footer-note">Professional portfolio showcasing my journey in Computer Science at Fatima Jinnah Women University (2024-2028)</div>
     </div>
 </div>
 
 <script>
-    // Dark Mode Toggle
     function toggleDarkMode() {
         document.body.classList.toggle('dark-mode');
         const btn = document.querySelector('.btn-container button:first-child');
         if (document.body.classList.contains('dark-mode')) {
-            btn.innerHTML = '☀️ Light Mode';
+            btn.innerHTML = 'Light Mode';
         } else {
-            btn.innerHTML = '🌙 Dark Mode';
+            btn.innerHTML = 'Dark Mode';
         }
     }
-
-    // Animate skill bars when they come into view
-    function animateSkillBars() {
-        const skillBars = document.querySelectorAll('.skill-bar-fill');
-        skillBars.forEach(bar => {
-            const width = bar.style.width;
-            if (width && width !== '0%') return;
-            const parent = bar.closest('.skill-item');
-            const label = parent.querySelector('.skill-label span');
-            if (label) {
-                const percent = label.innerText;
-                bar.style.width = percent;
-            }
-        });
-    }
-
-    // Trigger animation on load
-    window.addEventListener('load', function() {
-        const skillBars = document.querySelectorAll('.skill-bar-fill');
-        skillBars.forEach(bar => {
-            const parent = bar.closest('.skill-item');
-            const labelSpan = parent.querySelector('.skill-label span');
-            if (labelSpan) {
-                let percent = labelSpan.innerText;
-                percent = percent.replace('%', '');
-                bar.style.width = percent + '%';
-            } else {
-                bar.style.width = '85%';
-            }
-        });
-    });
 </script>
 </body>
 </html>
