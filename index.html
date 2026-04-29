@@ -20,7 +20,6 @@
             transition: all 0.3s ease;
         }
 
-        /* Dark Mode */
         body.dark-mode {
             background: #1a1a2e;
         }
@@ -66,8 +65,7 @@
 
         body.dark-mode .about-text,
         body.dark-mode .career-goal-box,
-        body.dark-mode .exp-list li,
-        body.dark-mode .tech-stack {
+        body.dark-mode .exp-list li {
             color: #d0d0d0;
         }
 
@@ -280,6 +278,32 @@
             color: #18616b;
         }
 
+        .cert-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .cert-pill {
+            background: #eef3f7;
+            border: 1px solid #c7dfe6;
+            padding: 10px 20px;
+            border-radius: 40px;
+            font-size: 13px;
+            font-weight: 500;
+            color: #1e5f6b;
+        }
+
+        .career-goal-box {
+            background: #f4f9fc;
+            padding: 20px 28px;
+            border-radius: 20px;
+            border: 1px solid #e0edf2;
+            font-size: 15px;
+            line-height: 1.7;
+            color: #2c5a62;
+        }
+
         .vol-card {
             background: #f9fdfe;
             border-left: 4px solid #2f8b7c;
@@ -320,7 +344,7 @@
 <body>
 <div class="cv-card">
     <div class="header">
-        <h1>HUMNA SHERAZ</h1>
+        <h1>HUMMA SHE RAZ</h1>
         <div class="tagline">Computer Science Undergraduate | Project Manager | Programmer | Small Business Owner</div>
         <div class="contact-bar">
             <span>Islamabad, Pakistan</span>
@@ -432,6 +456,24 @@
                         <span class="skill-tag">Time Management</span>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Certificates & Awards -->
+        <div class="section">
+            <div class="section-title">Certificates & Awards</div>
+            <div class="cert-container">
+                <span class="cert-pill">Google Project Management Professional Certificate</span>
+                <span class="cert-pill">6 Academic Awards - Outstanding performance in studies</span>
+                <span class="cert-pill">9 Participation Awards - Extracurriculars & events</span>
+            </div>
+        </div>
+
+        <!-- Career Goal -->
+        <div class="section">
+            <div class="section-title">Career Goal</div>
+            <div class="career-goal-box">
+                To build a strong career in Project Management, applying leadership, organizational, and problem-solving skills to successfully deliver projects. Aim to contribute to impactful projects while empowering others through teamwork, planning, and innovation.
             </div>
         </div>
 
