@@ -20,6 +20,7 @@
             transition: all 0.3s ease;
         }
 
+        /* Dark Mode */
         body.dark-mode {
             background: #1a1a2e;
         }
@@ -67,6 +68,10 @@
         body.dark-mode .career-goal-box,
         body.dark-mode .exp-list li,
         body.dark-mode .tech-stack {
+            color: #d0d0d0;
+        }
+
+        body.dark-mode .vol-card div {
             color: #d0d0d0;
         }
 
@@ -240,92 +245,35 @@
             margin-bottom: 8px;
         }
 
-        .tech-stack {
-            font-size: 12px;
-            color: #52828c;
-            margin-top: 8px;
-            font-weight: 500;
-        }
-
-        .exp-row {
-            display: flex;
-            gap: 25px;
-            flex-wrap: wrap;
-        }
-
-        .exp-card {
-            flex: 1;
-            background: #ffffff;
-            border: 1px solid #e2edf2;
-            border-radius: 24px;
-            padding: 20px;
-            transition: all 0.3s ease;
-        }
-
-        .exp-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 25px -12px rgba(0, 0, 0, 0.15);
-        }
-
-        .exp-title {
-            font-size: 18px;
-            font-weight: 800;
-            color: #1e4e5a;
-            margin-bottom: 12px;
-            border-bottom: 2px dashed #cae1e8;
-            padding-bottom: 5px;
-            display: inline-block;
-        }
-
-        .exp-list {
-            list-style: none;
-            margin: 15px 0;
-        }
-
-        .exp-list li {
-            margin-bottom: 8px;
-            padding-left: 20px;
-            position: relative;
-            font-size: 14px;
-            color: #2b595f;
-        }
-
-        .exp-list li::before {
-            content: "▹";
-            position: absolute;
-            left: 0;
-            color: #308074;
-        }
-
         .skill-block {
             background: #fafeff;
             border-radius: 20px;
             padding: 8px 0;
         }
 
-        .skill-item {
-            margin-bottom: 20px;
+        .skill-category {
+            margin-bottom: 24px;
         }
 
-        .skill-label {
+        .skill-category-title {
             font-weight: 700;
-            font-size: 15px;
+            font-size: 16px;
             color: #1a5f68;
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #c7dfe6;
+            padding-bottom: 5px;
         }
 
         .skill-tags {
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
-            margin-top: 8px;
+            margin-top: 5px;
         }
 
         .skill-tag {
             background: #e4f1f5;
-            padding: 4px 12px;
+            padding: 6px 14px;
             border-radius: 30px;
             font-size: 12px;
             font-weight: 500;
@@ -344,32 +292,7 @@
             font-weight: 800;
             font-size: 16px;
             color: #1a4b5a;
-        }
-
-        .cert-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-
-        .cert-pill {
-            background: #eef3f7;
-            border: 1px solid #c7dfe6;
-            padding: 8px 18px;
-            border-radius: 40px;
-            font-size: 13px;
-            font-weight: 500;
-            color: #1e5f6b;
-        }
-
-        .career-goal-box {
-            background: #f4f9fc;
-            padding: 20px 28px;
-            border-radius: 20px;
-            border: 1px solid #e0edf2;
-            font-size: 15px;
-            line-height: 1.7;
-            color: #2c5a62;
+            margin-bottom: 8px;
         }
 
         .footer-note {
@@ -411,6 +334,7 @@
     </div>
 
     <div class="content">
+        <!-- About Me -->
         <div class="section">
             <div class="section-title">About Me</div>
             <div class="about-box">
@@ -423,6 +347,7 @@
             </div>
         </div>
 
+        <!-- Education -->
         <div class="section">
             <div class="section-title">Education</div>
             <div class="edu-grid">
@@ -441,64 +366,78 @@
             </div>
         </div>
 
+        <!-- Academic Projects -->
         <div class="section">
             <div class="section-title">Academic Projects</div>
             <div class="projects-grid">
-                <div class="project-card"><div class="project-title">Automatic Pet Feeder</div><div class="tech-stack">Arduino, Blynk, C-style & HTML</div></div>
-                <div class="project-card"><div class="project-title">Hangman Game</div><div class="tech-stack">C / C++</div></div>
-                <div class="project-card"><div class="project-title">Banking System</div><div class="tech-stack">C / C++</div></div>
-                <div class="project-card"><div class="project-title">Library Management System</div><div class="tech-stack">Java + SQL database</div></div>
-                <div class="project-card"><div class="project-title">Virtual Machine System</div><div class="tech-stack">Computer Networks</div></div>
-                <div class="project-card"><div class="project-title">Obscure Binary Search Tree</div><div class="tech-stack">C++</div></div>
-                <div class="project-card"><div class="project-title">Simple Encryption Description</div><div class="tech-stack">Assembly Language + GUI</div></div>
+                <div class="project-card"><div class="project-title">Automatic Pet Feeder</div></div>
+                <div class="project-card"><div class="project-title">Hangman Game</div></div>
+                <div class="project-card"><div class="project-title">Banking System</div></div>
+                <div class="project-card"><div class="project-title">Library Management System</div></div>
+                <div class="project-card"><div class="project-title">Virtual Machine System</div></div>
+                <div class="project-card"><div class="project-title">Obscure Binary Search Tree</div></div>
+                <div class="project-card"><div class="project-title">Simple Encryption Description</div></div>
             </div>
         </div>
 
-        <div class="section">
-            <div class="section-title">Work Experience</div>
-            <div class="exp-row">
-                <div class="exp-card">
-                    <div class="exp-title">Home Tutor</div>
-                    <ul class="exp-list"><li>Personalized academic support for students</li><li>Custom lesson planning and progress tracking</li><li>Exam preparation and adaptive teaching</li></ul>
-                </div>
-                <div class="exp-card">
-                    <div class="exp-title">Small Business Owner (Baking)</div>
-                    <ul class="exp-list"><li>Managed an Instagram-based online bakery</li><li>Customer service and order management</li><li>Marketing, pricing and delivery timelines</li><li>Time management and business operations</li></ul>
-                </div>
-            </div>
-        </div>
-
+        <!-- Volunteer Experience -->
         <div class="section">
             <div class="section-title">Volunteer Experience</div>
-            <div class="vol-card"><div class="vol-title">Ayub National Park Cleanliness Drive</div><div style="font-size:13px; margin-top: 8px;">Led community cleanup initiative, coordinated volunteers, managed supplies and schedule.</div></div>
-            <div class="vol-card"><div class="vol-title">Awareness Programs & Community Development Initiatives</div><div style="font-size:13px; margin-top: 8px;">Organized sessions, coordinated speakers, collected feedback and managed outreach.</div></div>
+            <div class="vol-card">
+                <div class="vol-title">Ayub National Park Cleanliness Drive</div>
+                <div style="font-size:13px;">Led community cleanup initiative, coordinated volunteers, managed supplies and schedule.</div>
+            </div>
+            <div class="vol-card">
+                <div class="vol-title">Awareness Programs & Community Development Initiatives</div>
+                <div style="font-size:13px;">Organized sessions, coordinated speakers, collected feedback and managed outreach.</div>
+            </div>
         </div>
 
+        <!-- Skills -->
         <div class="section">
             <div class="section-title">Skills</div>
             <div class="skill-block">
-                <div class="skill-item"><div class="skill-label">Project Management</div><div class="skill-tags"><span class="skill-tag">Planning</span><span class="skill-tag">Organizing</span><span class="skill-tag">Monitoring</span></div></div>
-                <div class="skill-item"><div class="skill-label">Programming</div><div class="skill-tags"><span class="skill-tag">C</span><span class="skill-tag">C++</span><span class="skill-tag">Java</span><span class="skill-tag">SQL</span><span class="skill-tag">HTML/CSS</span><span class="skill-tag">Assembly</span></div></div>
-                <div class="skill-item"><div class="skill-label">Business & Marketing</div><div class="skill-tags"><span class="skill-tag">Instagram Growth</span><span class="skill-tag">Customer Engagement</span></div></div>
-                <div class="skill-item"><div class="skill-label">Soft Skills</div><div class="skill-tags"><span class="skill-tag">Communication</span><span class="skill-tag">Leadership</span><span class="skill-tag">Teamwork</span><span class="skill-tag">Problem Solving</span><span class="skill-tag">Time Management</span></div></div>
+                <div class="skill-category">
+                    <div class="skill-category-title">Project Management</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Planning</span>
+                        <span class="skill-tag">Organizing</span>
+                        <span class="skill-tag">Monitoring</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">Programming</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">Assembly</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">Business & Marketing</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Instagram Growth</span>
+                        <span class="skill-tag">Customer Engagement</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">Soft Skills</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">Leadership</span>
+                        <span class="skill-tag">Teamwork</span>
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Time Management</span>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="section">
-            <div class="section-title">Certificates & Awards</div>
-            <div class="cert-container">
-                <span class="cert-pill">Google Project Management Professional Certificate</span>
-                <span class="cert-pill">6 Academic Awards - Outstanding performance in studies</span>
-                <span class="cert-pill">9 Participation Awards - Extracurriculars & events</span>
-            </div>
+        <div class="footer-note">
+            Professional portfolio showcasing my journey in Computer Science at Fatima Jinnah Women University (2024-2028)
         </div>
-
-        <div class="section">
-            <div class="section-title">Career Goal</div>
-            <div class="career-goal-box">To build a strong career in Project Management, applying leadership, organizational, and problem-solving skills to successfully deliver projects. Aim to contribute to impactful projects while empowering others through teamwork, planning, and innovation.</div>
-        </div>
-
-        <div class="footer-note">Professional portfolio showcasing my journey in Computer Science at Fatima Jinnah Women University (2024-2028)</div>
     </div>
 </div>
 
